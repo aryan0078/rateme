@@ -13,6 +13,7 @@
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 100%;
+    position: fixed;
 }.branding{
     font-size: x-large;
     color: white;
