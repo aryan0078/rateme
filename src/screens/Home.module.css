@@ -19,13 +19,32 @@
 
 }
 .title{
+    width:89%;
     font-size: 14px;
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 5px;
+    align-self: flex-end;
+}
+.rating{
+    font-size: 14px;
+    padding:6px;
+    width: 30px;
+    position: relative;
+    top: 3px;
+    right: 0px;
+    background-color: #111111;
+    color: white;
+border-radius: 50px;
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 .top{
     width: 100%;
+    display: flex;
+    flex-direction: row;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
  position: relative;
@@ -41,24 +60,22 @@ top: 0px;
     background-color:transparent;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 40px;
+    width: 30px;
 
-    height: 40px;
+    height: 30px;
 
     transition: all ease-in 0.2s;
   
 }
-.like:active{
-    transform: scale(1.2%);
-}
+
 .like:hover{
     background: url('../assets/like.png');
     background-color:transparent;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 40px;
+    width: 30px;
 
-    height: 40px;
+    height: 30px;
   
     position: absolute;;
     left: 10px;
