@@ -2,12 +2,13 @@
     background: url('../assets/love.png');
     width: 35px;
     height: 35px;
-  
+
     background-size: contain;
-   
+
 }.main{
     padding: 1.5%;
     display: flex;
+    position: fixed;
     flex-direction: row;
     background-color: #282828;
     border-bottom-left-radius: 15px;
