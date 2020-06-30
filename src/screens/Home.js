@@ -1,41 +1,42 @@
 import React, { Component } from 'react';
 import styles from './Home.module.css'
 import Header from '../components/Header'
+import Cards from '../components/Cards'
+import FlatList from 'flatlist-react';
+var l='https://source.unsplash.com/user/erondu/700x700'
+
 class Home extends Component {
+    constructor(props){
+        super(props)
+        this.state={data:[{url: l, votes:16},
+            {url: l, votes:14},
+            {url: l, votes:110},
+            {url: l, votes:151},
+            {url: l,votes:115},
+            {url: l, votes:114},
+            {url: l,votes:131},
+            {url: l, votes:141},
+            {url: l, votes:150}]}
+    }
+    renderPerson = (person, idx) => {
+        return (
+            <Cards />
+        );
+      }
     render() {
         return (
             <>
           
             <div className={styles.main}>
             <Header/>
-              <div class="card" className={styles.card} >
-<div className={styles.top}>
-    <h1 className={styles.title}>By Tesla</h1>
-</div>
-  
-       <div className={styles.like}></div>
-   </div>
-   <div class="card" className={styles.card} id={styles.x} >
-<div className={styles.top}>
-    <h1 className={styles.title}>By NASA</h1>
-</div>
-  
-       <div className={styles.like}></div>
-   </div>
-   <div class="card" className={styles.card} id={styles.p} >
-<div className={styles.top}>
-    <h1 className={styles.title}>By NIVIDIA</h1>
-</div>
-  
-       <div className={styles.like}></div>
-   </div>
-   <div class="card" className={styles.card} >
-<div className={styles.top}>
-    <h1 className={styles.title}>By MSI</h1>
-</div>
-  
-       <div className={styles.like}></div>
-   </div>
+     
+            <FlatList
+          list={this.state.data}
+          renderItem={this.renderPerson}
+          renderWhenEmpty={() => <div>List is empty!</div>}
+          
+        />
+
             </div >
         </>);
     }

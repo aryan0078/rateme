@@ -1,0 +1,69 @@
+.title{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.top{
+    width: 100%;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+ position: relative;
+top: 0px;
+    background-color: white;
+  
+}
+.like{
+    position: absolute;;
+    left: 10px;
+    bottom: 10px;
+    background: url('../assets/heart.png');
+    background-color:transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+
+    height: 40px;
+
+    transition: all ease-in 0.2s;
+  
+}
+.like:active{
+    transform: scale(1.2%);
+}
+.like:hover{
+    background: url('../assets/like.png');
+    background-color:transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+
+    height: 40px;
+  
+    position: absolute;;
+    left: 10px;
+    bottom: 10px;
+  
+}
+.card{
+    position: relative;
+    background: url('https://source.unsplash.com/user/erondu/700x700');
+
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 2%;
+    background-color: white;
+    border-radius: 10px;
+   
+    height: 20rem;
+    width: 20rem;
+    
+   
+
+
+ 
+}
+.card::before{
+    background: url('https://source.unsplash.com/user/erondu/1600x900');
+}
