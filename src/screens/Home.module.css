@@ -53,10 +53,10 @@ top: 0px;
   
 }
 .like{
+    background: url(../assets/heart.png);
     position: absolute;;
     left: 10px;
     bottom: 10px;
-    background: url('../assets/heart.png');
     background-color:transparent;
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,8 +69,7 @@ top: 0px;
 }
 
 .like:hover{
-    background: url('../assets/like.png');
-    background-color:transparent;
+    background: url(../assets/like.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 30px;
@@ -94,13 +93,12 @@ top: 0px;
     border-radius: 10px;
    
     height: 20rem;
-    width: 20rem;
-    
-   
-
-
- 
+    width: 20rem;     
 }
 .card::before{
     background: url('../assets/img4.png');
+}
+
+.id{
+    display: none
 }
