@@ -1,12 +1,13 @@
 .main{
     background-color: #282828;
-width: 100%;
+width: 95%;
 position:fixed;
-bottom: 0px;
+bottom: 10px;
 height: 10vh;
-border-top-left-radius:15px ;
-border-top-right-radius:15px ;
-
+border-top-left-radius:25px ;
+border-top-right-radius:25px ;
+border-bottom-left-radius:25px ;
+border-bottom-right-radius:25px ;
 display: flex;
 justify-content: center;
 align-items: center;
