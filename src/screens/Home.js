@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import FlatList from 'flatlist-react';
 import styles from './Home.module.css'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 class Home extends Component {
     constructor(props){
         super(props);
@@ -75,6 +76,7 @@ class Home extends Component {
           list={this.state.data}
           renderItem={this.spec}
         />
+        <Footer/>
             </div >
         </>);
     }
