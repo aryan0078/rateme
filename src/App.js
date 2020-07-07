@@ -1,15 +1,17 @@
-import React from 'react';
-import Home from './screens/Home';
-import Login from './screens/Login';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React, {Component} from 'react';
+import Home from './screens/Home'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Login from './screens/Login'
+import Signup from './screens/Signup'
 function App() {
   return (
-  	<div>
-  	 <Login />
-     <Router>
-     <Route path="/" component={Home} />
-    </Router>
-    </div>
+    <Router>
+     <Route exact npath="/login" component={Login} />
+     <Route exact path="/signup" component={Signup} />
+    <Route  exact path="/" component={Home} />
+   
+   
+    </Router>  
   );
 }
 

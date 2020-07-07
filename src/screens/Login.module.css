@@ -1,3 +1,14 @@
 .bground{
-	background-color: #353b6a;
+	background-color: black;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+.login{
+	background-color: #151f38;
+	height: 70vh;
+	width: 80%;
+	border-radius: 15px;
 }
