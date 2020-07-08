@@ -1,0 +1,38 @@
+.area{
+	background-color: black;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.prof_area{
+	background-color: #151f38;
+	height: 75vh;
+	width: 85%;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.prof{
+	background-color: black;
+	border-radius: 50px;
+	background-image: url('../assets/shin.jpg');
+	height: 90px;
+	width: 90px;
+	background-size: cover;
+	background-position: center;
+	margin-top: -320px;
+    }
+.prof_data{
+	color: #b2bec3;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: bold;
+	font-size: 20px;
+	flex-direction: row;
+	margin-top: 120px;
+}
